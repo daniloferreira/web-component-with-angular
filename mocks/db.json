@@ -1,0 +1,53 @@
+{
+  "persons": [
+    {
+      "id": "3234",
+      "name": "Teste"
+    },
+    {
+      "id": "34344",
+      "name": "Teste"
+    }
+  ],
+  "emails": [
+    {
+      "personId": "3234",
+      "_embedded": {
+        "emails": [
+          {
+            "_links": {
+              "self": {
+                "href": "http://author-example.com"
+              },
+              "confirm": {
+                "href": "/persons/emails/3234/confirm"
+              },
+              "request-token": {
+                "href": "/persons/emails/3234/confirm"
+              }
+            },
+            "id": "shahadat",
+            "email": "edsf@outro.com",
+            "type": "alternative"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "http://author-example.com"
+              },
+              "confirm": {
+                "href": "/persons/emails/3234/confirm"
+              },
+              "request-token": {
+                "href": "/persons/emails/3234/confirm"
+              }
+            },
+            "id": "345435345",
+            "email": "edsf@principal.com",
+            "type": "main"
+          }
+        ]
+      }
+    }
+  ]
+}

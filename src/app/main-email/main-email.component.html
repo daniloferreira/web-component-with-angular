@@ -1,0 +1,19 @@
+<div class="container">
+  <div id="edit-section"  [hidden]="!editionModeEnabled">
+    <div class="form-group" >
+      <label for="emailInput">E-mail: </label>
+      <input type="email" class="form-control" id="emailInput"
+             [formControl]="email" name="email">
+    </div>
+    <div>
+      <button class="right" (click)="change()">Alterar</button>
+    </div>
+  </div>
+  <div id="view-section" class="form-group" [hidden]="editionModeEnabled">
+    <label>E-mail: </label>
+    <span>{{email.value}}</span>
+    <a href="" class="right" [attr.disabled]="editionLinkDisabled()">Editar</a>
+  </div>
+
+</div>
+

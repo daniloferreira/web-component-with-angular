@@ -1,0 +1,22 @@
+.right {
+  float: right;
+}
+
+@media all and (min-width: 370px) {
+  .container {
+    width: 370px;
+  }
+}
+
+a[disabled=true] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color:grey;
+}
+#view-section > label {
+  padding-right: 5px;
+}
+
+#view-section > a {
+  margin-top: 2px;
+}
