@@ -1,5 +1,5 @@
 {
-  "name": "uol-contacts",
+  "name": "web-component-with-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,7 +11,7 @@
     "start:proxy": "ng serve  --proxy-config proxy.conf.json $NODE_DEBUG_OPTION   ",
     "start:proxy:mock:server": "concurrently --kill-others \"npm run start:proxy\" \"npm run mock:server \" ",
     "e2e": "ng e2e",
-    "package": "jscat dist/uol-contacts/runtime.js dist/uol-contacts/polyfills.js dist/uol-contacts/scripts.js dist/uol-contacts/main.js  > uol-contacts.js",
+    "package": "jscat dist/web-component-with-angular/runtime.js dist/web-component-with-angular/polyfills.js dist/web-component-with-angular/scripts.js dist/web-component-with-angular/main.js  > web-component-with-angular.js",
     "serve": "http-server",
     "build:package:serve": "npm run build && npm run package && npm run serve"
   },
